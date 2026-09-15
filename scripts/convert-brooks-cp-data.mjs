@@ -8,7 +8,7 @@
  * License: Dr. Brooks confirmed free use for educational and commercial purposes (email 2026-02-10)
  *
  * Pinned commit: 450be0147cfc71a3002c2efe746f98601f2c2396
- * Output: 36 JSON files in packages/pedi-growth/src/data/
+ * Output: 36 JSON files in src/data/
  *         6 GMFCS levels × 3 measures (weight, height, bmi) × 2 sexes = 36 files
  */
 

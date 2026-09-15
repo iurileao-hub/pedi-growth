@@ -7,7 +7,7 @@
  *   - 0-5 years: https://github.com/WorldHealthOrganization/anthro (data-raw/growthstandards/)
  *   - 5-19 years: https://github.com/WorldHealthOrganization/anthroplus (data-raw/growthstandards/)
  *
- * Output: 18 JSON files in packages/pedi-growth/src/data/
+ * Output: 18 JSON files in src/data/
  */
 
 import { writeFileSync, mkdirSync } from 'node:fs';

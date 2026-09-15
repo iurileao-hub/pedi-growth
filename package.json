@@ -1,0 +1,59 @@
+{
+  "name": "@pedi-growth/core",
+  "version": "1.1.1",
+  "type": "module",
+  "license": "MIT",
+  "description": "Pediatric growth calculator — WHO, Down syndrome, and cerebral palsy charts with z-scores, percentiles, and nutritional classification",
+  "author": "Iuri Leão",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iurileao-hub/pedi-growth.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "verify:provenance": "node scripts/verify-zemel-provenance.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "who",
+    "growth",
+    "anthropometry",
+    "z-score",
+    "percentile",
+    "pediatrics",
+    "child-growth",
+    "nutritional-classification",
+    "lms",
+    "cerebral-palsy",
+    "gmfcs",
+    "brooks",
+    "down-syndrome",
+    "zemel"
+  ],
+  "homepage": "https://github.com/iurileao-hub/pedi-growth#readme",
+  "bugs": {
+    "url": "https://github.com/iurileao-hub/pedi-growth/issues"
+  },
+  "devDependencies": {
+    "@types/node": "20.16.11",
+    "typescript": "^5.6.3",
+    "vitest": "^4.0.16"
+  }
+}
